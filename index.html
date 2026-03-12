@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasnain Ali — Video Editor</title>
+  <meta name="description" content="Professional video editor crafting cinematic reels, brand films, and social content that converts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- ═══════════════════════════════════════ NAVIGATION -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">HA<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <!-- Replace with your own showreel video -->
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="assets/videos/showreel.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Video Editor & Motion Designer</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line" data-delay="0">Frames That</span>
+        <span class="line accent" data-delay="100">Stop Scrolls.</span>
+        <span class="line" data-delay="200">Stories That</span>
+        <span class="line accent" data-delay="300">Drive Sales.</span>
+      </h1>
+      <p class="hero-sub">Cinematic video editing for brands, creators, and businesses ready to be unforgettable.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Start a Project →</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="120">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Projects Done</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="50">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="5">0</span><span class="stat-plus">M+</span>
+        <span class="stat-label">Views Generated</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Brand Films</span><span class="sep">✦</span>
+      <span>Social Reels</span><span class="sep">✦</span>
+      <span>YouTube Edits</span><span class="sep">✦</span>
+      <span>Motion Graphics</span><span class="sep">✦</span>
+      <span>Ad Creatives</span><span class="sep">✦</span>
+      <span>Podcast Videos</span><span class="sep">✦</span>
+      <span>Wedding Films</span><span class="sep">✦</span>
+      <span>Colour Grading</span><span class="sep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Brand Films</span><span class="sep">✦</span>
+      <span>Social Reels</span><span class="sep">✦</span>
+      <span>YouTube Edits</span><span class="sep">✦</span>
+      <span>Motion Graphics</span><span class="sep">✦</span>
+      <span>Ad Creatives</span><span class="sep">✦</span>
+      <span>Podcast Videos</span><span class="sep">✦</span>
+      <span>Wedding Films</span><span class="sep">✦</span>
+      <span>Colour Grading</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ WORK / PORTFOLIO -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title">The Reel<span class="accent">.</span></h2>
+        <p class="section-sub">A curated selection of edits across brands, creators, and campaigns.</p>
+      </div>
+
+      <!-- FILTER TABS -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="brand">Brand Films</button>
+        <button class="filter-btn" data-filter="reels">Social Reels</button>
+        <button class="filter-btn" data-filter="youtube">YouTube</button>
+        <button class="filter-btn" data-filter="ads">Ads</button>
+      </div>
+
+      <!-- PORTFOLIO GRID -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- ITEM 1 — Replace src with your thumbnail & video -->
+        <div class="portfolio-item" data-category="brand" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-01.jpg" alt="Brand Film – FreshCo" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-01.mp4" data-title="Meta ebook Ad" data-cat="Brand Film">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Brand Film</span>
+            <h3 class="portfolio-title">Meta ebook Ad</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="portfolio-item featured" data-category="reels" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-02.jpg" alt="Instagram Reels" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-02.mp4" data-title="Podcast Reel Editing" data-cat="Social Reels">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Social Reels</span>
+            <h3 class="portfolio-title">Podcast Reel</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="portfolio-item" data-category="youtube" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-03.jpg" alt="YouTube Edit" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-03.mp4" data-title="Documentary Style" data-cat="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">YouTube</span>
+            <h3 class="portfolio-title">Documentary Style</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="portfolio-item" data-category="ads" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-04.jpg" alt="Ad Creative" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-04.mp4" data-title="Dirt Race" data-cat="Ad Creative">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Ad Creative</span>
+            <h3 class="portfolio-title">Dirt Race Event</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="portfolio-item featured" data-category="brand" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-05.jpg" alt="Corporate Brand Film" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-05.mp4" data-title="MArriage Proposal" data-cat="Event Editing">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Event Editing</span>
+            <h3 class="portfolio-title">Marriage Proposal</h3>
+          </div>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="portfolio-item" data-category="reels" data-aos>
+          <div class="portfolio-thumb">
+            <img src="assets/thumbnails/project-06.jpg" alt="Fashion Reel" loading="lazy" onerror="this.src='assets/images/placeholder.jpg'" />
+            <div class="portfolio-overlay">
+              <button class="play-btn" data-video="assets/videos/project-06.mp4" data-title="House Tour" data-cat="Real Estate">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-cat">Real Estate </span>
+            <h3 class="portfolio-title">House Tour</h3>
+          </div>
+        </div>
+
+      </div><!-- /portfolio-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ VIDEO LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-inner">
+      <div class="lightbox-meta">
+        <span class="lightbox-cat" id="lightboxCat"></span>
+        <h3 class="lightbox-title" id="lightboxTitle"></h3>
+      </div>
+      <div class="lightbox-video-wrap">
+        <video id="lightboxVideo" controls playsinline>
+          <source id="lightboxSource" src="" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ SERVICES -->
+  <section class="section section-dark" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">Services<span class="accent">.</span></h2>
+        <p class="section-sub">Everything you need to make your video content convert.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">▶</div>
+          <h3>Social Media Reels</h3>
+          <p>Short-form vertical videos engineered for Instagram, TikTok, and YouTube Shorts. Fast-paced cuts, captions, sound design, and hooks that stop the scroll.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">◈</div>
+          <h3>Brand & Corporate Films</h3>
+          <p>Cinematic brand stories that establish authority and trust. Full edit, colour grade, and motion graphics included. Perfect for your website hero or pitch deck.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">◉</div>
+          <h3>YouTube Long-Form</h3>
+          <p>Subscriber-growing edits with chapters, b-roll integration, custom lower-thirds, and retention-optimised pacing. I speak the algorithm's language.</p>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-icon">⬡</div>
+          <h3>Ad Creatives</h3>
+          <p>Performance-driven video ads for Meta and Google. Multiple aspect ratios, A/B variants, and hooks tested to maximise ROAS for your campaigns.</p>
+        </div>
+
+
+        <div class="service-card service-card--cta" data-aos>
+          <h3>Not sure what you need?</h3>
+          <p>Let's jump on a free 15-min call and figure out the best approach for your brand.</p>
+          <a href="#contact" class="btn-primary">Book Free Call</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">The Process<span class="accent">.</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step" data-aos>
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Discovery Call</h3>
+            <p>We talk about your goals, target audience, and vision. I ask the right questions so every edit has purpose.</p>
+          </div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step" data-aos>
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>You Send Footage</h3>
+            <p>Drop your raw clips via Google Drive, WeTransfer, or Frame.io. I handle everything from there.</p>
+          </div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step" data-aos>
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>First Draft Delivery</h3>
+            <p>You receive a polished first cut within the agreed timeline — typically 3–5 business days.</p>
+          </div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step" data-aos>
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Revise & Deliver</h3>
+            <p>Two rounds of revisions are included. Once approved, you get your final files ready to publish.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ TESTIMONIALS -->
+  <section class="section section-dark" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Love</span>
+        <h2 class="section-title">They Said It<span class="accent">.</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" data-aos>
+          <div class="stars">★★★★★</div>
+          <p>"Hasnain turned our raw iPhone footage into a cinematic brand video that we use on our homepage. Clients constantly compliment it. Best investment we've made."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">S</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <span>Founder, Nova Skincare</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos>
+          <div class="stars">★★★★★</div>
+          <p>"Our Instagram reels went from 200 views to 80K+ after Hasnain started editing them. The pacing, music selection, hooks — everything is dialled in perfectly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>James K.</strong>
+              <span>Fitness Coach & Creator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos>
+          <div class="stars">★★★★★</div>
+          <p>Working with Hasnain has been an absolute pleasure! He delivers fast and high-quality editing every time. Beyond just editing, he's brilliant at brainstorming creative ideas, arranging scripts, and even helping set up everything from lighting to recording.
+If you're looking for someone who can take your content to the next level with minimal effort on your part, just connect with Husnain - He'll handle the rest professionally and efficiently. Highly recommended!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <strong>Mr. Shoaib.</strong>
+              <span>CEO, Hassan Space Developers</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-visual" data-aos>
+          <div class="about-img-wrap">
+            <!-- Replace with your own photo -->
+            <img src="assets/images/profile.jpg" alt="Hasnain Ali — Video Editor" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="about-img-accent"></div>
+          </div>
+          <div class="about-tools">
+            <span class="tool-tag">Premiere Pro</span>
+            <span class="tool-tag">After Effects</span>
+            <span class="tool-tag">Photoshop</span>
+            <span class="tool-tag">Illustrator</span>
+          </div>
+        </div>
+        <div class="about-text" data-aos>
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title" style="text-align:left">The Editor<span class="accent">.</span></h2>
+          <p>I'm Hasnain Ali — a video editor with 4+ years of experience helping brands and creators turn raw footage into scroll-stopping content that actually does something.</p>
+          <p>I obsess over every cut, every frame, and every beat drop. Good editing is invisible — great editing makes people feel something and take action.</p>
+          <p>Based in Pakistan, working globally. Fluent in Premiere Pro and After Effects. Fast turnaround. Clear communication. No surprises.</p>
+          <div class="about-cta">
+            <a href="#contact" class="btn-primary">Work With Me</a>
+            <a href="assets/images/resume.pdf" download class="btn-ghost">Download CV →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info" data-aos>
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title" style="text-align:left">Let's Build<br>Something<span class="accent">.</span></h2>
+          <p>Got a project in mind? Fill in the form and I'll get back to you within 24 hours. First consultation is always free.</p>
+          <div class="contact-details">
+            <a href="mailto:iamnaeemakhtar12@gmail.com" class="contact-link">
+            </a>
+            <a href="https://wa.me/+923165650835" target="_blank" class="contact-link">
+              <span class="contact-icon">◎</span> WhatsApp Me
+            </a>
+            <a href="https://instagram.com/hasnyn_aly" target="_blank" class="contact-link">
+              <span class="contact-icon">◈</span> instagram
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-aos>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Mr ABC" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@brand.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option value="reels">Social Media Reels</option>
+              <option value="brand">Brand / Corporate Film</option>
+              <option value="youtube">YouTube Editing</option>
+              <option value="ads">Ad Creatives</option>
+              <option value="motion">Motion Graphics</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Approximate Budget</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select range…</option>
+              <option value="under500">Under $500</option>
+              <option value="500-1000">$500 – $1,000</option>
+              <option value="1000-3000">$1,000 – $3,000</option>
+              <option value="3000+">$3,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Me About Your Project</label>
+            <textarea id="message" name="message" rows="5" placeholder="What do you need? Deadline? Any references?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Send Message →</button>
+          <p class="form-note">I reply within 24 hours. No spam, ever.</p>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span> Message sent! I'll be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo">HA<span class="dot">.</span></a>
+        <div class="footer-socials">
+          <a href="https://instagram.com/hasnyn_aly" target="_blank" aria-label="Instagram">Ig</a>
+          <a href="https://www.facebook.com/share/1C3Guwhhk4/" target="_blank" aria-label="facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hasnain Ali. All rights reserved.</span>
+        <span class="footer-made">Crafted with obsession.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
